@@ -1,132 +1,88 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Thainá Tamiris Souza Dionisio</title>
-    
-    <!-- Importação de 2 Fontes Externas (Montserrat e Roboto) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <title>Currículo - Thainá Tamiris Souza Dionisio</title>
     <!-- Chamada para o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Thainá Tamiris Souza Dionisio</h1>
+    <main class="curriculo-container">
+        <!-- Coluna da esquerda (Perfil, Contato e Habilidades) usando <aside> -->
+        <aside class="perfil-info">
+            <div class="header">
+                <img src="img01.jpg" alt="Foto de Thainá" width="150" class="foto-perfil">
+                <h1>Thainá Tamiris Souza Dionisio</h1>
+                <p>Estudante de Engenharia de Software</p>
+            </div>
+            
+            <section class="contato">
+                <h2>Contato</h2>
+                <ul>
+                    <li><img src="icon03-local.svg" width="16" height="16"> Cornélio Procópio - PR</li>
+                    <li><img src="icon01-email.svg" width="16" height="16"> <a href="mailto:thainadionisio@alunos.utfpr.edu.br">thainadionisio@alunos.utfpr...</a></li>
+                    <li><img src="icon02-linkedin.svg" width="16" height="16"> <a href="https://www.linkedin.com/in/thaina-tamiris-souza-dionisio-3291593a8/" target="_blank">LinkedIn</a></li>
+                    <li><img src="icon04-github.svg" width="16" height="16"> <a href="https://github.com/thainatamiriss" target="_blank">GitHub</a></li>
+                </ul>
+            </section>
+            
+            <section class="habilidades">
+                <h2>Habilidades e Idiomas</h2>
+                <ul>
+                    <li>Linguagem C#</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>Português - Nativo</li>
+                    <li>Inglês - Básico</li>
+                </ul>
+            </section>
+        </aside>
 
-        <figure>
-            <img src="img01.jpg" alt="Foto de Thainá Tamiris Souza Dionisio" width="200">
-            <figcaption>Thainá Tamiris Souza Dionisio</figcaption>
-        </figure>
+        <!-- Coluna da direita (Objetivo, Experiência, Educação e ODS) -->
+        <section class="main-content">
+            
+            <section class="resumo">
+                <h2>Objetivo & Resumo Profissional</h2>
+                <p>Busco uma oportunidade de <strong>Estágio</strong> ou posição como <strong>Desenvolvedora Júnior</strong> na área de Desenvolvimento de Software / TI. Possuo conhecimentos práticos e teóricos em linguagens como C#, Java, Python e tecnologias web (HTML e CSS). Busco colaborar com o desenvolvimento de soluções tecnológicas, trazendo dedicação e facilidade de aprendizado.</p>
+            </section>
 
-        <p><strong>Estudante de Engenharia de Software</strong></p>
+            <section class="experiencia">
+                <h2>Experiência Profissional</h2>
+                <div class="item-experiencia">
+                    <h3>Atendente | Iate Clube Amoreira</h3>
+                    <p class="periodo">09/2022 - 07/2024</p>
+                    <ul>
+                        <li>Responsável pelo atendimento ao cliente em mesas e balcões.</li>
+                        <li>Organização de rotinas e foco no trabalho em equipe.</li>
+                    </ul>
+                </div>
+            </section>
 
-        <h2>Dados Pessoais e Contato</h2>
-        <ul class="contato-lista">
-            <li><img src="icon03-local.svg" alt="Ícone de localização" width="16" height="16"> Cidade: Cornélio Procópio - PR</li>
-            <li><img src="icon01-email.svg" alt="Ícone de e-mail" width="16" height="16"> Email: <a href="mailto:thainadionisio@alunos.utfpr.edu.br">thainadionisio@alunos.utfpr.edu.br</a></li>
-            <li><img src="icon02-linkedin.svg" alt="Ícone do LinkedIn" width="16" height="16"> LinkedIn: <a href="https://www.linkedin.com/in/thaina-tamiris-souza-dionisio-3291593a8/" target="_blank">linkedin.com/in/thaina-tamiris-souza-dionisio</a></li>
-            <li><img src="icon04-github.svg" alt="Ícone do GitHub" width="16" height="16"> GitHub: <a href="https://github.com/thainatamiriss" target="_blank">github.com/thainatamiriss</a></li>
-        </ul>
-    </header>
+            <section class="educacao">
+                <h2>Formação Acadêmica</h2>
+                <div class="item-educacao">
+                    <h3>Graduação - Engenharia de Software</h3>
+                    <p>Universidade Tecnológica Federal do Paraná (UTFPR) | Cursando atualmente</p>
+                </div>
+                <div class="item-educacao">
+                    <h3>Curso Técnico - Talento Tech Paraná</h3>
+                    <p>Universidade Estadual de Ponta Grossa (UEPG) | 2024 - 2025</p>
+                </div>
+            </section>
 
-    <main>
-        <section class="secao-cv" id="objetivo">
-            <h2>Objetivo Profissional</h2>
-            <p>Busco uma oportunidade de <strong>Estágio</strong> ou posição como <strong>Desenvolvedora Júnior</strong> na área de Desenvolvimento de Software / TI, visando aplicar e expandir os conhecimentos adquiridos na faculdade e em projetos práticos.</p>
-        </section>
+            <section class="ods">
+                <h2>ODS que pretendo contribuir</h2>
+                <div class="item-educacao">
+                    <img src="img02.jpg" alt="ODS 4" width="200" style="border-radius: 8px; margin-top: 10px;">
+                    <p><strong>ODS 4 - Educação de Qualidade:</strong> acredito poder contribuir compartilhando conhecimento em tecnologia e apoiando o acesso à educação de qualidade.</p>
+                </div>
+            </section>
 
-        <section class="secao-cv" id="resumo">
-            <h2>Resumo Profissional</h2>
-            <p>Estudante de Engenharia de Software na UTFPR. Possuo conhecimentos práticos e teóricos em linguagens como C#, Java, Python e tecnologias web (HTML e CSS). Busco ingressar no mercado de trabalho para colaborar com o desenvolvimento de soluções tecnológicas, trazendo dedicação, facilidade de aprendizado e foco em trabalho em equipe.</p>
-        </section>
-
-        <section class="secao-cv" id="ods">
-            <h2>ODS que pretendo contribuir</h2>
-            <figure>
-                <img src="img02.jpg" alt="Imagem ilustrativa do ODS escolhido" width="300">
-                <figcaption>ODS 4 - Educação de Qualidade: acredito poder contribuir compartilhando conhecimento em tecnologia e apoiando o acesso à educação de qualidade.</figcaption>
-            </figure>
-        </section>
-
-        <section class="secao-cv" id="experiencia">
-            <h2>Experiência Profissional</h2>
-            <article>
-                <h3>Atendente | Iate Clube Amoreira</h3>
-                <p><em>09/2022 - 07/2024</em></p>
-                <p>Responsável pelo atendimento ao cliente em mesas e balcões, organização de rotinas e trabalho em equipe.</p>
-            </article>
-        </section>
-
-        <section class="secao-cv" id="educacao">
-            <h2>Formação Acadêmica</h2>
-            <article>
-                <h3>Graduação - Engenharia de Software</h3>
-                <p><b>Instituição:</b> Universidade Tecnológica Federal do Paraná (UTFPR)</p>
-                <p><b>Período:</b> Cursando atualmente</p>
-            </article>
-
-            <article>
-                <h3>Curso Técnico - Talento Tech Paraná</h3>
-                <p><b>Instituição:</b> Universidade Estadual de Ponta Grossa (UEPG)</p>
-                <p><b>Carga Horária:</b> Capacitação em 1000h</p>
-                <p><b>Período:</b> 2024 - 2025 (1 ano)</p>
-            </article>
-        </section>
-
-        <section class="secao-cv" id="habilidades-idiomas">
-            <h2>Habilidades e Idiomas</h2>
-            <h3>Competências Técnicas</h3>
-            <ul>
-                <li>Linguagem C#</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>HTML5 &amp; CSS3</li>
-            </ul>
-
-            <h3>Idiomas</h3>
-            <ul>
-                <li>Português - Nativo</li>
-                <li>Inglês - Básico</li>
-            </ul>
-        </section>
-        
-        <section class="secao-cv" id="contato-modal">
-            <h2>Contato</h2>
-            <button onclick="document.getElementById('modalContato').showModal()">Enviar informações de contato</button>
-
-            <dialog id="modalContato">
-                <h3>Informações de Contato</h3>
-                <form method="dialog">
-                    <p>
-                        <label for="nomeCompleto">Nome Completo:</label><br>
-                        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
-                    </p>
-                    <p>
-                        <label for="instagram">Link para o Instagram:</label><br>
-                        <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/seuusuario">
-                    </p>
-                    <p>
-                        <label for="whatsapp">Número do WhatsApp:</label><br>
-                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(43) 99999-9999" required>
-                    </p>
-                    <button type="submit" value="enviar">Enviar</button>
-                    <button type="button" onclick="document.getElementById('modalContato').close()">Fechar</button>
-                </form>
-            </dialog>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Thainá Tamiris Souza Dionisio. Todos os direitos reservados.</p>
-    </footer>
-
 </body>
 </html>
-
-```
